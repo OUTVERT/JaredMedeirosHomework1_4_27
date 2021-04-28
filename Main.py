@@ -2,10 +2,10 @@ from ShoppingBag import *
 
 def main():
 
-    # Define items
-    items = [("Pants", 75, "Massachusetts", "clothing"),
-             ("Car Bill", 400, "Maine", "everything else"),
-             ("Steak", 20, "New Hampshire", "food")]
+    # Define items in order by paper so Mass, NH, Then Maine
+    items = [("Clothing", 75, "Massachusetts", "clothing"),
+             ("Everything Else", 400, "New Hampshire", "everything else"),
+             ("Food", 20, "Maine", "Wic Eligible foods")]
 
     bag = ShoppingBag(items)
     bag.calculate_total()
